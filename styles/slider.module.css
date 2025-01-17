@@ -1,0 +1,14 @@
+
+.mySwiper ::after{
+  display: none ;
+}
+
+/* Only target the swiper navigation buttons inside `.customSwiper` */
+/* .mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+
+} */
+
