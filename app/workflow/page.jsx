@@ -32,7 +32,7 @@ const page = () => {
     <>
       <section className="py-8  rigth relative shadowTop">
           <div className="container mx-auto px-7 mt-12">
-            <div className="col-span-full">
+            <div className="col-span-full md:pb-20">
               <h1 className="heading2">Effortless Workflow for Seamless Results</h1>
               <p className="lgParagraph text-center white">Our streamlined workflow ensures efficiency, clarity, and seamless collaboration throughout your project.</p>
             </div>
