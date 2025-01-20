@@ -19,11 +19,17 @@ body {
   background-color: #000000;
 }
 
-
-.custNavBg{
-  background-color: #7e8485;
+.custNavBg {
   z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2); /* Slight white background with opacity */
+  backdrop-filter: blur(29px); /* Apply blur effect to the background */
+  -webkit-backdrop-filter: blur(29px); /* Safari support */
 }
+/* .custNavBg{
+  background-color: #7e8485;
+  background: transparent;
+  z-index: 999;
+} */
 
 .text-green{
   color: #179525;
@@ -681,16 +687,42 @@ body {
   width: 35%;
 }
 
+.shadowTop{
+  overflow: hidden;
+}
+.shadowTop::before{
+  content: "";
+  background-image: url("/contact/shadow.svg")!important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
 
-
-
-
-
+.rightImage.shadowTop::before{
+  left: 0 !important;
+  top: 60%;
+}
+.bottomShadow{
+  overflow: visible !important;
+}
+.shadowTop.bottomShadow::before{
+  left: 80% !important;
+  bottom: -90px !important;
+}
 
 
 
 
 @media (max-width:510px) {
+  /* .blured::after{
+    display: none;
+  } */
+
   .custCardBg::before,
   .custCardBg::after{
     height: 18rem;
@@ -705,4 +737,10 @@ body {
     display: none;
   }
   
+  .para{
+    width: 100% !important;
+  }
+  .cHeight{
+    width: 100%;
+  }
 }

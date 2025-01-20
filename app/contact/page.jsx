@@ -30,7 +30,7 @@ const page = () => {
 
   return (
     <>
-      <section className="py-8 border shadowCustom relative">
+      <section className="py-8 shadowCustom relative">
           <div className="container mx-auto px-7 mt-12">
             <div className="col-span-full">
               <h1 className="heading2">Contact Me</h1>

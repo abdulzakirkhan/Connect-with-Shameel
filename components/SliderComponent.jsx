@@ -34,6 +34,17 @@ const SliderComponent = () => {
           modifier: 1,
           slideShadows: true,
         }}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+        }}
         navigation={true}
         onSlideChange={handleSlideChange}  // Track slide change
         pagination={false}  // Disable default pagination

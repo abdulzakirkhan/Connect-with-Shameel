@@ -18,7 +18,7 @@ const page = () => {
       <div className="blured mt-12">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-0">
           <div className="w-full relative">
-            <Image src={"/images/heroimg.png"} width={400} height={150} alt="SHameel" className="absolute -top-28 left-20" />
+            <Image src={"/images/heroimg.png"} width={400} height={150} alt="SHameel" className="absolute hidden md:flex -top-28 left-20" />
           </div>
           <div className="w-full md:mt-20">
             <div className="w-full">
@@ -40,7 +40,7 @@ const page = () => {
         <div className="container mx-auto px-7 mt-12">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="col-span-full">
-              <h1 className="heading2">Upcoming Events</h1>
+              <h1 className="heading2 mb-7 md:mb-0">Upcoming Events</h1>
             </div>
           </div>
         </div>
@@ -50,10 +50,10 @@ const page = () => {
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="w-full text-center">
               <p className="heading3 white">Career Builders</p>
-              <Image src={"/images/Conference.png"} width={404} height={115} alt="Conference" className='ms-28' />
+              <Image src={"/images/Conference.png"} width={404} height={115} alt="Conference" className='md:ms-28' />
               <p className="heading1 ">Event 2024</p>
-              <div className="text-center flex justify-center py-4 ">
-               <Image src={"/images/lineNew.png"} width={290} height={115} alt="Conference" className='' />
+              <div className="text-center flex justify-center items-center py-4 ">
+               <Image src={"/images/lineNew.png"} width={290} height={115} alt="Conference" className='Conference' />
               </div>
 
               <div className="flex gap-3 justify-center">
@@ -61,7 +61,7 @@ const page = () => {
                 <button className="text-white btnSm outline">Learn More</button>
               </div>
 
-              <div className="flex gap-3 justify-center pt-12">
+              <div className="flex flex-wrap md:flex-nowrap gap-3 justify-center pt-12">
                 <div className="flex gap-2 bg-white p-5 rounded-xl h-306">
                   <div className="">
                     <Image src={"/images/event.png"} width={30} height={30} alt="Events" />
@@ -83,7 +83,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full text-end flex justify-end">
+            <div className="w-full hidden text-end md:flex justify-end">
               <Image src={"/images/look.png"} width={507} height={584} alt="" />
             </div>
           </div>

@@ -13,8 +13,8 @@ const CourseCard = ({cardsData}) => {
             <span className="inline-block bg-[#cecece] rounded-lg py-2 px-4">{card.category}</span>
             <span className="inline-block bg-[#cecece] rounded-lg py-2 px-4">New</span>
           </div>
-          <h4 className="mt-2 font-semibold text-lg leading-tight">{card.title}</h4>
-          <div className="mt-8 flex justify-between items-center">  
+          <h4 className="md:mt-2 font-semibold text-lg leading-tight">{card.title}</h4>
+          <div className="mt-3 md:mt-8 flex justify-between items-center">  
             <div className="flex gap-3">
               <Image src={"/courses/lessons.svg"} width={18} height={18} alt="Lessons" />
               <span className="fs-12">{card.lessons}</span>

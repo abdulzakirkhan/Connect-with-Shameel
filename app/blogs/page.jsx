@@ -8,13 +8,13 @@ const page = () => {
   return (
     <>
         <section className="">
-          <div className="container mx-auto px-7 pt-24">
+          <div className="container mx-auto px-7 pt-12 md:pt-24">
             <div className="grid grid-cols-1">
               <div className="w-full flex flex-col justify-center items-center" >
                 <h1 className="heading2">Blogs</h1>
                 <p className="para">Discover insights, tips, and inspiration on technology, career growth, and content creation. Explore featured highlights or catch the latest updates!</p>
               </div>
-              <div className="w-full">
+              <div className="w-full pt-20 md:pt-1">
                 <h1 className="heading2 green">Featured </h1>
               </div>
             </div>

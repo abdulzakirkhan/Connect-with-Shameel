@@ -30,7 +30,7 @@ const page = () => {
 
   return (
     <>
-      <section className="py-8  rigth relative overflow-x-auto">
+      <section className="py-8  rigth relative shadowTop">
           <div className="container mx-auto px-7 mt-12">
             <div className="col-span-full">
               <h1 className="heading2">Effortless Workflow for Seamless Results</h1>
@@ -38,7 +38,7 @@ const page = () => {
             </div>
 
           </div>
-          <section className="bg-[#2f2f2f] rightImage">
+          <section className="bg-[#2f2f2f] rightImage shadowTop">
             <div className="container mx-auto px-7 mt-12">
                 <div className="grid grid-cols-1 mt-4 gap-3 md:grid-cols-2 md:mt-12 px-4 py-4 md:p-12 rounded-xl">
                     <div className="w-full">
@@ -66,7 +66,7 @@ const page = () => {
             </div>
           </section>
 
-          <section className="bg-[#2f2f2f] rightImage imgchange">
+          <section className="bg-[#2f2f2f] rightImage imgchange shadowTop bottomShadow">
             <div className="container mx-auto px-7 mt-12">
                 <div className="grid grid-cols-1 mt-4 gap-3 md:grid-cols-2 md:mt-12 px-4 py-4 md:p-12 rounded-xl">
                     <div className="w-full">

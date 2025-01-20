@@ -43,10 +43,10 @@ export default function Home() {
       </div>
       <div className="w-full m-cust">
         <div className="container mx-auto px-7">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 justify-center gap-4">
             {reviews.map((review,index) =>(
 
-            <div className="flex flex-col gap-3 justify-center" key={index}>
+            <div className="flex flex-col gap-3 justify-center items-center md:items-start" key={index}>
               <Image src={`/${review.title}`} width={160} height={48} alt={review.count} />
               <div className="flex gap-2 align-middle px-3">
                 {renderStars(review.stars)}
@@ -97,7 +97,7 @@ export default function Home() {
             <div className="grid grid-cols-12 gap-4 justify-center items-center">
               <div className="col-span-12 md:col-span-3">
                 <div className="flex justify-between items-center py-6">
-                  <div>
+                  <div className="">
                     <span className="text-white lgParagraph px-3">Clients</span>
                     <h3 className="white heading3">1000+</h3>
                   </div>
