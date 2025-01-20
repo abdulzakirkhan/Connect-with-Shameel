@@ -3,7 +3,10 @@ import Image from 'next/image'
 import React from 'react'
 import { blogsDataCardData, blogSlider2CardData, blogSliderCardData } from '../data'
 import SliderSm from '@/components/SliderSm'
-
+export const metadata = {
+  title: "Blogs",
+  description: "Explore the latest insights, tips, and inspiration through our blogs on technology, career growth, and more!",
+};
 const page = () => {
   return (
     <>

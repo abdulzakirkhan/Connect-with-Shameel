@@ -3,6 +3,7 @@ import CardsComponent from '@/components/CardsComponent';
 import React, { useState } from 'react';
 import { portfolioCardData } from '../data';
 
+
 const Page = () => {
   // State to keep track of the active tab
   const [activeTab, setActiveTab] = useState('profile');

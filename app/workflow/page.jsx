@@ -5,6 +5,9 @@ import * as Yup from 'yup';
 import React from 'react'
 import Image from 'next/image';
 
+
+
+
 const page = () => {
   const serviceOptions = ['Web Development', 'App Development', 'SEO', 'Graphic Design'];
 

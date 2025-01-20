@@ -1,13 +1,14 @@
 "use client"
 import Image from 'next/image';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { coursesCardData } from '../data';
 import CourseCard from '@/components/CourseCard';
 
 
+
 const page = () => {
     const [activeTab, setActiveTab] = useState('profile');
-  
+    const [title, setTitle] = useState("second")
     const handleTabChange = (tabId) => {
       setActiveTab(tabId);
     };
